@@ -1,10 +1,8 @@
 package org.example;
 
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.PriorityQueue;
+import java.awt.print.Book;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,15 +20,37 @@ public class Main {
 
         //List AND Arraylist... Take home
         List<String> stringList = new ArrayList<>();
-        ArrayList<Squad> stringArrayList = new ArrayList<>();
+        ArrayList<Books> shelfOfBooks = new ArrayList<>();
 
 
-        stringArrayList.add(new Squad(5, "Java"));
-        stringArrayList.add(new Squad(32, "MERN"));
-        stringArrayList.add(new Squad(1, "Node"));
-        stringArrayList.add(new Squad(5, "Java"));
+        Map<String, ArrayList<Books>> searchingBook = new HashMap<>();
 
-        System.out.println("Printing stringArraylist objects ---->" + stringArrayList.get(3));
+//        Queue<Integer> nameQueue = new PriorityQueue<>();
+
+        Books algoexpert = new Books(5, "java");
+        Books algoexpert1 = new Books(5, "java");
+        searchingBook.put("computer science", shelfOfBooks);
+        shelfOfBooks.add(algoexpert);
+        shelfOfBooks.add(algoexpert1);
+
+
+
+
+        //LinkedList
+        LinkedList<String> stringLinkedList =  new LinkedList<>();
+        LinkedListExample linkedListExample = new LinkedListExample();
+        linkedListExample.add("Java");
+        linkedListExample.add("mern");
+//        linkedListExample.addAt(1, "Java");
+
+        System.out.println("This is my linkedlist example ------> "+ linkedListExample.getHead().getData());
+        System.out.println("This is my linkedlist example ------> "+ linkedListExample.getHead().getNextNode().getData());
+
+        stringLinkedList.add("java");
+        stringLinkedList.addFirst("Python");
+        stringLinkedList.add(1, "node");
+
+        System.out.println("This is the linkedlist ----> "+ stringLinkedList);
 
     }
 }
