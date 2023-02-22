@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c53ed1f-bbe8-4096-8133-528faedab51d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="7c53ed1f-bbe8-4096-8133-528faedab51d" name="Changes" comment="adds custom implementation of linkedlist">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Books.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Books.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LinkedListExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LinkedListExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,11 +104,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676896663153</updated>
-      <workItem from="1676896664928" duration="11879000" />
+      <workItem from="1676896664928" duration="13750000" />
     </task>
+    <task id="LOCAL-00001" summary="adds custom implementation of linkedlist">
+      <created>1677049696087</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677049696087</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="adds custom implementation of linkedlist" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds custom implementation of linkedlist" />
   </component>
 </project>

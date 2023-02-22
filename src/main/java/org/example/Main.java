@@ -1,7 +1,5 @@
 package org.example;
 
-
-import java.awt.print.Book;
 import java.util.*;
 
 public class Main {
@@ -20,35 +18,39 @@ public class Main {
 
         //List AND Arraylist... Take home
         List<String> stringList = new ArrayList<>();
-        ArrayList<Books> shelfOfBooks = new ArrayList<>();
+        PriorityQueue<Books> shelfOfBooks = new PriorityQueue<>();
 
-
-        Map<String, ArrayList<Books>> searchingBook = new HashMap<>();
-
-//        Queue<Integer> nameQueue = new PriorityQueue<>();
+        //Queue<Integer> nameQueue = new PriorityQueue<>();
 
         Books algoexpert = new Books(5, "java");
-        Books algoexpert1 = new Books(5, "java");
-        searchingBook.put("computer science", shelfOfBooks);
+        Books algoexpert1 = new Books(3, "java");
+        Books algoexpert2 = new Books(1, "java");
+
         shelfOfBooks.add(algoexpert);
         shelfOfBooks.add(algoexpert1);
+        shelfOfBooks.add(algoexpert2);
 
+        System.out.println("This is the shelfOfBooks ------> "+ shelfOfBooks);
 
-
-
+        while (!shelfOfBooks.isEmpty()){
+            System.out.println("this is the 'polling' results for the shelfOfBooks --------> "+ shelfOfBooks.poll());
+        }
         //LinkedList
         LinkedList<String> stringLinkedList =  new LinkedList<>();
+        stringLinkedList.add("java");
+        stringLinkedList.addFirst("Python");
+        stringLinkedList.add(1, "node");
+
+        //Custom LinkedList implementation
         LinkedListExample linkedListExample = new LinkedListExample();
         linkedListExample.add("Java");
         linkedListExample.add("mern");
-//        linkedListExample.addAt(1, "Java");
+        //linkedListExample.addAt(1, "Java");
 
         System.out.println("This is my linkedlist example ------> "+ linkedListExample.getHead().getData());
         System.out.println("This is my linkedlist example ------> "+ linkedListExample.getHead().getNextNode().getData());
 
-        stringLinkedList.add("java");
-        stringLinkedList.addFirst("Python");
-        stringLinkedList.add(1, "node");
+
 
         System.out.println("This is the linkedlist ----> "+ stringLinkedList);
 

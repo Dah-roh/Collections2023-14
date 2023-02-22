@@ -28,15 +28,15 @@ public class LinkedListExample {
         }    
     }    
     public void add(String data){        
-        Node newNode = new Node(data);        
+        Node dataNode = new Node(data);
         if(this.head == null){            
-            head = newNode;        
+            head = dataNode;
         }
         else {            
             Node currentNode = head;            
             while(currentNode.getNextNode() != null){                
                 currentNode = currentNode.getNextNode();            
-            }            currentNode.setNextNode(newNode);        
+            }            currentNode.setNextNode(dataNode);
         }    
     }    
     public void addAt(int index, String data){
