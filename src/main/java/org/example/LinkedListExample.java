@@ -1,7 +1,7 @@
 package org.example;
 
 public class LinkedListExample {
-    private Node head;    
+    private Node head;
     public Node getHead() {        
         return head;    
     }    
@@ -10,7 +10,7 @@ public class LinkedListExample {
     }   
     public class Node {        
         private String data;        
-        private Node nextNode;        
+        private Node nextNode;
         public Node(String data){            
             this.data = data;        
         }        
@@ -36,7 +36,8 @@ public class LinkedListExample {
             Node currentNode = head;            
             while(currentNode.getNextNode() != null){                
                 currentNode = currentNode.getNextNode();            
-            }            currentNode.setNextNode(dataNode);
+            }
+            currentNode.setNextNode(dataNode);
         }    
     }    
     public void addAt(int index, String data){
@@ -53,9 +54,10 @@ public class LinkedListExample {
     public String get(int index){
         Node node = head;        
         int count = 0;
-        while(index>count){            
+        while(index > count){
             node = node.getNextNode();            
-            count++;        }        
+            count++;
+        }
         return node.getData();    
     }
 }

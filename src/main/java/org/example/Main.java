@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.*;
 
-public class Main {
+public class Main implements GenericsExampleService<Books, Squad>{
     public static void main(String[] args) {
         PriorityQueue<Squad> squadPriorityQueue = new PriorityQueue<Squad>(5, new ComparingSquads());
         squadPriorityQueue.add(new Squad(5, "Java"));
@@ -20,8 +20,8 @@ public class Main {
         List<String> stringList = new ArrayList<>();
         PriorityQueue<Books> shelfOfBooks = new PriorityQueue<>();
 
-        //Queue<Integer> nameQueue = new PriorityQueue<>();
 
+        //Queue<Integer> nameQueue = new PriorityQueue<>()
         Books algoexpert = new Books(5, "java");
         Books algoexpert1 = new Books(3, "java");
         Books algoexpert2 = new Books(1, "java");
@@ -35,6 +35,8 @@ public class Main {
         while (!shelfOfBooks.isEmpty()){
             System.out.println("this is the 'polling' results for the shelfOfBooks --------> "+ shelfOfBooks.poll());
         }
+
+
         //LinkedList
         LinkedList<String> stringLinkedList =  new LinkedList<>();
         stringLinkedList.add("java");
@@ -45,14 +47,25 @@ public class Main {
         LinkedListExample linkedListExample = new LinkedListExample();
         linkedListExample.add("Java");
         linkedListExample.add("mern");
-        //linkedListExample.addAt(1, "Java");
+        linkedListExample.addAt(1, "Java");
 
         System.out.println("This is my linkedlist example ------> "+ linkedListExample.getHead().getData());
         System.out.println("This is my linkedlist example ------> "+ linkedListExample.getHead().getNextNode().getData());
+        System.out.println("MERN ------> "+ linkedListExample.get(1));
 
 
 
         System.out.println("This is the linkedlist ----> "+ stringLinkedList);
 
+    }
+
+    @Override
+    public void save(Squad squad) {
+
+    }
+
+    @Override
+    public String count(Books books) {
+        return null;
     }
 }
