@@ -10,6 +10,7 @@ public class GenericsExampleServiceImpl implements GenericsExampleService<String
 
     @Override
     public String count(String s) {
+
         return null;
     }
 }

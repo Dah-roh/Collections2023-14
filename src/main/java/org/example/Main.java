@@ -11,6 +11,21 @@ public class Main implements GenericsExampleService<Books, Squad>{
         squadPriorityQueue.add(new Squad(5, "Java"));
         System.out.println("print squad priority queue -----> " + squadPriorityQueue);
 
+        Map<String, Object> mapOfObject = new HashMap<>();
+        mapOfObject.put("list", new ArrayList<>());
+        mapOfObject.put("set", new HashSet<>());
+        mapOfObject.put("hashmap", new HashMap<>());
+
+        Set<String> namesOfPeople =  new HashSet<>();
+        namesOfPeople.add("daro");
+        namesOfPeople.add("Oluwaseyi");
+        namesOfPeople.add("daro");
+
+        System.out.println("This is the set Object data -----> "+ namesOfPeople);
+
+
+
+
 
         while(!squadPriorityQueue.isEmpty()){
             System.out.println(" each element---> "+squadPriorityQueue.poll());
@@ -56,6 +71,29 @@ public class Main implements GenericsExampleService<Books, Squad>{
 
 
         System.out.println("This is the linkedlist ----> "+ stringLinkedList);
+
+
+
+        Queue<Integer> integerQueue = new PriorityQueue<>();
+        integerQueue.add(1);
+        integerQueue.add(3);
+        integerQueue.add(2);
+        integerQueue.add(4);
+        PriorityQueue<Integer> integerPriorityQueue = new PriorityQueue<>();
+        integerPriorityQueue.add(1);
+        integerPriorityQueue.add(3);
+        integerPriorityQueue.add(2);
+        integerPriorityQueue.add(4);
+
+
+        //testing queues
+        while(integerQueue.peek()!=null){
+            System.out.println("This is a our integers in a priority queue -----> "+ integerPriorityQueue.poll());
+        }
+
+
+
+
 
     }
 

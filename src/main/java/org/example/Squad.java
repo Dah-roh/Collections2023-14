@@ -1,6 +1,6 @@
 package org.example;
 
-public class Squad {
+public class Squad implements Comparable<Squad> {
     private int squadNo;
     private String stack;
 
@@ -34,4 +34,9 @@ public class Squad {
         this.squadNo = squadNo;
         this.stack = stack;
     }
+
+    @Override
+    public int compareTo(Squad o1) {
+      return Integer.compare(this.getSquadNo(), o1.getSquadNo());
+        }
 }
